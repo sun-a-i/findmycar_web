@@ -379,13 +379,14 @@ flex-wrap: wrap; /* 작은 화면에서 줄바꿈 허용 */
         <!-- 문의하기 양식 -->
         <div class="contact-box">
             <h2>문의하기</h2>
-            <form action="#">
-                <input type="text" name="name" placeholder="이름을 입력해주세요" required>
-                <input type="email" name="email" placeholder="이메일을 입력해주세요" required>
-                <input type="tel" name="phone" placeholder="전화번호를 입력해주세요" required>
-                <textarea name="message" placeholder="메시지를 입력해주세요" required></textarea>
-                <button type="submit">제출</button>
-            </form>
+<form action="mailto:taeyang35@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="이름을 입력해주세요" required>
+    <input type="email" name="email" placeholder="이메일을 입력해주세요" required>
+    <input type="tel" name="phone" placeholder="전화번호를 입력해주세요" required>
+    <textarea name="message" placeholder="메시지를 입력해주세요" required></textarea>
+    <button type="submit">제출</button>
+</form>
+
         </div>
 
         <!-- 연락처 정보 -->
