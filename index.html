@@ -379,15 +379,13 @@ flex-wrap: wrap; /* 작은 화면에서 줄바꿈 허용 */
         <!-- 문의하기 양식 -->
         <div class="contact-box">
             <h2>문의하기</h2>
-
-            <form onsubmit="showMessage(); return false;">
-                <input type="text" name="name" placeholder="이름을 입력해주세요" required>
-                <input type="email" name="email" placeholder="이메일을 입력해주세요" required>
-                <input type="tel" name="phone" placeholder="전화번호를 입력해주세요" required>
-                <textarea name="message" placeholder="메시지를 입력해주세요" required>현재 메일을 보낼 수 없습니다. sun@ianything.co.kr로 직접 메일을 보내주시길 바랍니다</textarea>
-                <button type="submit">제출</button>
-            </form>
-		<p id="responseMessage" style="display:none; color: green; font-size: 16px; margin-top: 10px;"></p>
+		<form action="mailto:taeyang35@gmail.com" method="post">
+		    <input type="text" name="name" placeholder="이름을 입력해주세요" required>
+		    <input type="email" name="email" placeholder="이메일을 입력해주세요" required>
+		    <input type="tel" name="phone" placeholder="전화번호를 입력해주세요" required>
+		    <textarea name="message" placeholder="메시지를 입력해주세요" required></textarea>
+		    <button type="submit">제출</button>
+		</form>
         </div>
 
         <!-- 연락처 정보 -->
@@ -400,16 +398,6 @@ flex-wrap: wrap; /* 작은 화면에서 줄바꿈 허용 */
                 귀하와의 소통을 기대합니다.
             </p>
         </div>
-<script>
-        function showMessage() {
-            var responseMessage = document.getElementById('responseMessage');
-            responseMessage.innerText = 'sun@ianything.co.kr로 직접 메일을 보내주시길 바랍니다';
-            responseMessage.style.display = 'block';
-        }
-
-        // 페이지가 로드되면 'visible' 클래스 즉시 적용
-        document.getElementById('textOverlay').classList.add('visible');
-    </script>
 
         <!-- 위치 안내 섹션 -->
         <div class="contact-box">
